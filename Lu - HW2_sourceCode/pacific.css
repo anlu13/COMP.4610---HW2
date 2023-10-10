@@ -1,0 +1,178 @@
+header,
+hgroup,
+nav,
+footer,
+figure,
+figcaption,
+aside,
+section,
+article {
+	display: block;
+}
+
+/* the 'main' area */
+#wrapper {
+	/* "'main' area...is 80% of the page width" */
+	width: 80%;
+	/* "600px minimum" */
+	min-width: 600px;
+
+	/* set left, right margins to auto, so as to center the main area */
+	margin-left: auto;
+	margin-right: auto;
+
+	/* bottom margin is slightly larger than top */
+	margin-bottom: 100px;
+
+	/* color "eye-dropped" from the handout example */
+	background-color: #9BC6E0;
+}
+
+/* the background area behind the "main" window */
+body {
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+
+	/* "gradient background is done with...ptrbackground" */
+	background-image: url("ptrbackground.jpg");
+
+	/* background-repeat: repeat-x; */
+
+	/* "page is solid #00569f below the gradient" */
+	background-color: #00569f;
+}
+
+/* the white box */
+#content {
+	/* white box = white color */
+	background-color: white;
+	/* spacing for the navigation bar */
+	margin-left: 200px;
+
+	/* spacing above "Enjoy Nature...", fills in area with white */
+	padding-top: 10px;
+	/* spacing for text "in" from left side */
+	padding-left: 30px;
+}
+
+/* inside white - list */
+#content ul {
+	/* "the bulleted list uses...marker.gif"  */
+	list-style-image: url("marker.gif");
+	/*  makes bullets inside the list "box" */
+	list-style-position: inside;
+}
+
+#content img {
+	/* make coast.jpg stick to left side */
+	float: left;
+	/* separate image and right 20px */
+	margin-right: 20px;
+}
+
+.resort {
+	/* color of "Pacific Trails Resort" in #content */
+	/* color "eye-dropped" from the handout example */
+	color: #737F88;
+	/* bold text */
+	font-weight: bold;
+}
+
+
+p {
+	/* space text in #content to left */
+	padding-right: 35px;
+}
+
+nav {
+	/* navigation menu bar on left side */
+	float: left;
+}
+
+/* the list */
+nav ul {
+	font-size: 1.2em;
+
+	/* remove default list bullets */
+	list-style-type: none;
+	/* space list text 20px to the right */
+	padding-left: 20px;
+}
+
+/* navigation links text format */
+nav li a {
+	/* left aligned */
+	text-align: left;
+	/* font color black */
+	color: black;
+	/* remove default underlined */
+	text-decoration: none;
+	/* font bolded */
+	font-weight: bold;
+}
+
+nav a:visited {
+	/* (unchanged) */
+	color: #344873;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+/* h1: "Pacific Trails Resort" */
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+
+	/* set background-image as sunset.jpg */
+	background-image: url("sunset.jpg");
+	/* This ensures the image covers the entire header */
+	/* make image right aligned */
+	background-position: right;
+
+	/* make sure no repeating the image on x or y axis */
+	background-repeat: no-repeat;
+	/* background black to blend in with header image */
+	background-color: black;
+	/* text color white */
+	color: white;
+}
+
+h2 {
+	color: #3399CC;
+}
+
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#contact {
+	font-size: 90%;
+}
+
+dt {
+	color: #000033;
+}
+
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+
+
+	/* make white to blend in with #content */
+	background-color: white;
+
+	/* spacing for navigation bar */
+	margin-left: 200px;
+
+	/* spacing, using the pdf example as reference */
+	padding-top: 50px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+}
+
+footer::first-line {
+	/* first line ("Copyright..."), italic */
+	font-style: italic;
+}
