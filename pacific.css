@@ -36,8 +36,6 @@ body {
 	/* "gradient background is done with...ptrbackground" */
 	background-image: url("ptrbackground.jpg");
 
-	/* background-repeat: repeat-x; */
-
 	/* "page is solid #00569f below the gradient" */
 	background-color: #00569f;
 }
@@ -71,8 +69,7 @@ body {
 }
 
 .resort {
-	/* color of "Pacific Trails Resort" in #content */
-	/* color "eye-dropped" from the handout example */
+	/* color of "Pacific Trails Resort" in #content, color "eye-dropped" from the handout example */
 	color: #737F88;
 	/* bold text */
 	font-weight: bold;
@@ -84,8 +81,9 @@ p {
 	padding-right: 35px;
 }
 
+/* the entire navigation menu bar */
 nav {
-	/* navigation menu bar on left side */
+	/* navigation on left side */
 	float: left;
 }
 
@@ -127,7 +125,6 @@ h1 {
 
 	/* set background-image as sunset.jpg */
 	background-image: url("sunset.jpg");
-	/* This ensures the image covers the entire header */
 	/* make image right aligned */
 	background-position: right;
 
