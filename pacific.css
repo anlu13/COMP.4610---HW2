@@ -115,6 +115,7 @@ nav a:visited {
 }
 
 nav a:hover {
+	/* (unchanged) */
 	color: #FFFFFF;
 }
 
